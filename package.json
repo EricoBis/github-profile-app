@@ -1,14 +1,18 @@
 {
   "name": "github-profile-app",
   "private": true,
+  "homepage": "https://EricoBis.github.io/github-profile-app",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "isomorphic-fetch": "^3.0.0",
     "octokit": "^2.0.10",
     "react": "^18.2.0",
